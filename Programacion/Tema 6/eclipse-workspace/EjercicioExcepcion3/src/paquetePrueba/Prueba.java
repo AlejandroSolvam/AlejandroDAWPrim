@@ -8,11 +8,12 @@ el programa haurà de manejar l'error,mostrar un missatge i tornar a demanar
 un valor i una posició fins que el array estiga ple. */
 public class Prueba {
 	public static void main(String [] args) {
+		boolean seguir=true;
 		do {
 		
 		 try {
 			 	int arrayInts[]=arrayInts = new int[3];
-			 	boolean seguir=true;
+			 	
 			 	int faltar=3;
 			    Scanner introducir=new Scanner(System.in);
 			    for(int i=0;i<arrayInts.length;i++) {
@@ -28,9 +29,9 @@ public class Prueba {
 			    
 				if(faltar==0) {
 					System.out.println("Array lleno");
+					seguir=false;
 				}
-				
-				
+			
 				}
 	 
 	             catch ( ArrayIndexOutOfBoundsException salidaPosicionArray) {

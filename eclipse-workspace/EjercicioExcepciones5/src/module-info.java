@@ -1,8 +1,0 @@
-/**
- * 
- */
-/**
- * 
- */
-module EjercicioExcepciones5 {
-}
