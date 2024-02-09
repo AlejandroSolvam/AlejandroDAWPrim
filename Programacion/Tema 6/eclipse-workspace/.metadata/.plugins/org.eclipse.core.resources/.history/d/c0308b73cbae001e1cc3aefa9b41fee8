@@ -1,0 +1,13 @@
+package proyectoSerVivo;
+
+public class SerVivo {
+	private byte edad;
+	
+	SerVivo(){
+		this.edad=0;
+	}
+	
+	SerVivo(byte newE){
+		this.edad=newE;
+	}
+}

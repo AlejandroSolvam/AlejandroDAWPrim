@@ -1,0 +1,36 @@
+package paquetePrueba;
+
+import java.util.Scanner;
+
+/* 3 Exercici: Elabore un programa que continga un array de 3 enters i demana
+ingressar un valor en alguna posició, ocorrerà un error si la posició no existeix,
+el programa haurà de manejar l'error,mostrar un missatge i tornar a demanar
+un valor i una posició fins que el array estiga ple. */
+public class Prueba {
+	public static void main(String [] args) {
+		do {
+			
+		
+		
+		 try {
+			 	int arrayInts[]=arrayInts = new int[3];
+			 	
+			    Scanner introducir=new Scanner(System.in);
+			    System.out.print("Introduce el numero: ");
+				int num = introducir.nextInt();
+				System.out.print("Introduce la posicion donde quieres introducir el numero: ");
+				int pos = introducir.nextInt();
+				arrayInts[pos]=num;
+				
+				}
+	 
+	             catch (ArithmeticException errorSegundoValor0) {
+				System.out.println("Asignacion a uno de los valores de la division a 0");
+	              }
+		 
+		 	
+		 System.out.println("No hay errores");
+		}while(true);
+		
+	}
+}

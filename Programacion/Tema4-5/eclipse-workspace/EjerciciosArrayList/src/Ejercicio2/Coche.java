@@ -1,0 +1,63 @@
+package Ejercicio2;
+
+import java.util.ArrayList;
+
+import Ejercicio1.Estudiante;
+
+/* Exercici 2
+Crea la classe cotxe de la qual es vol saber: la matricula, la marca, el model i els Km. D'ella necessitarem un o més
+constructors, i els mètodes get i set de les seues propietats. El programa demanarà per teclat les dades dels cotxes i els
+guardarà a un ArrayList.
+S'introduiran tants cotxes com l'usuari del programa decidisca. Es mostrarà un menú per pantalla com el següent:
+• Afegir un cotxe.
+• Esborrar un cotxe.
+• Quants cotxes es tenen.
+• Veure tots els cotxes introduïts.
+• Tots els cotxes d'una marca determinada.  */
+public class Coche {
+	
+	private String matricula;
+	private String marca;
+	private String modelo;
+	private double km;
+	
+	Coche(String matric, String marc, String mod, double kilom){
+		this.setMatricula(matric);
+		this.setMarca(marc);
+		this.setModelo(mod);
+		this.setKilometros(kilom);
+	}
+	
+	String getMatricula() {
+		return this.matricula;
+	}
+	
+	void setMatricula(String newMatr) {
+		this.matricula=newMatr;
+	}
+	
+	String getMarca() {
+		return this.marca;
+	}
+	
+	void setMarca(String newMarc) {
+		this.marca=newMarc;
+	}
+	
+	String getModelo() {
+		return this.modelo;
+	}
+	
+	void setModelo(String newModel) {
+		this.modelo=newModel;
+	}
+	
+	double getKilometros() {
+		return this.km;
+	}
+	
+	void setKilometros(double newKil) {
+		this.km=newKil;
+	}
+
+}

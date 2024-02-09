@@ -1,0 +1,46 @@
+package paquetePrueba;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+/* Exercici 2: Crea un programa que preguntar el nom de l'usuari i la seua edat, mostrar quants anys tindria
+en una dècada més i classificar segons la seua edat en A[0-25], B[26-50], C[51-...].
+L'eixida per pantalla hauria de ser una mica com la següent:
+Nombre:?
+Gustavo
+Edad:?
+29
+Usuario Gustavo de Categoría B, en una década tendrá 39 años.
+Nota: Utilizar la estructura try{ }catch(){ }  */
+public class Prueba {
+	public static void main(String [] args) {
+		do {
+		
+		 try {
+			 	Scanner introducir=new Scanner(System.in);
+			 	
+			 	System.out.print("Introduce el nombre del usuario:");
+				String usu = introducir.next();
+				
+				System.out.print("Introduce la edad del usuario:");
+				int edad = introducir.nextInt();
+				
+			 	
+			 	
+			 	System.out.println("ArrayList completado con exito");
+				 for(int i=0;i<10;i++) {
+				 		System.out.println(arrayInts[i]);
+				 	}
+			 	
+			 	}
+			    
+				
+	 
+	             catch (InputMismatchException valorValidoParaInt) {
+				System.out.println("No puedes introducir en un int un valor que no sea este mismo.");
+	              }
+		
+		}while(true);
+		
+	}
+}

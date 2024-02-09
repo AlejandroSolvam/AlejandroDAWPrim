@@ -1,0 +1,11 @@
+import bustia.Bustia;
+import bustia.correu.Correu;
+
+public class ProvaBustia {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

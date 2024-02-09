@@ -1,0 +1,22 @@
+package proyectoHumano;
+
+public class Humano {
+	private String nombre;
+	
+	Humano(){
+		this.nombre="Nombre Predeterminado";
+	}
+	
+	Humano(String newN, int newE){
+		super(newE);
+		this.nombre=newN;
+	}
+	
+	String getNombre() {
+		return this.nombre;
+	}
+	
+	void setNombre(String newN) {
+		this.nombre=newN;
+	}
+}

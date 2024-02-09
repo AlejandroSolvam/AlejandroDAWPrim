@@ -1,0 +1,11 @@
+package bustia;
+import bustia.correu.Correu;
+
+public class Bustia {
+	private Correu[] array;
+	private static int cont=0;
+	
+   public Bustia() {
+	   array=new Correu[100]
+   }
+}

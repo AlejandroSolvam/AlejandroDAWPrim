@@ -1,0 +1,66 @@
+package bustia;
+import bustia.correu.Correu;
+import java.util.ArrayList;
+
+public class BustiaBueno {
+
+	public class Bustia {
+		private ArrayList <Correu> bustiaCorreos;
+		private static int cont=0;
+		
+	   public Bustia() {
+		   bustiaCorreos=new ArrayList();
+	   }
+	   
+	   public int numeroDeCorreus() {
+		   return bustiaCorreos.size();
+	   }
+	   
+	   public void afegir(Correu c) {
+		   bustiaCorreos.add(c);
+	   }
+	   
+	   public boolean porLeer() {
+		   for(int i=0; i<bustiaCorreos.size(); i++) {
+			   Correu variableCorreo=bustiaCorreos.get(i);
+			   if(!variableCorreo.isLeido()) {
+				   return true;
+			   }
+		   }
+		   return false;
+	   }
+	   
+	   public String muestraPrimerNoLeido(){
+		   for(int i=0; i<cont; i++) {
+			   if(!array[i].isLeido()) {
+				   array[i].setLeido(true);
+				   return array[i].getTexto();
+			   }
+		   }
+		   return "Todo leido";
+	   }
+	   
+	   public String muestra(int k) {
+		   if(k>0 && k<=cont) {
+			   array[k-1].setLeido(true);
+			   return array[k-1].getTexto();
+		   }
+		   return "No existe el correo "+k;
+	   }
+	   
+	   public void elimina(int k) {
+		   if(k>0 && k<=cont) {
+			   for(int i=k-1;i<cont-1;i++) {
+				   array[i]=array[i+1];
+				   cont--;
+			   }
+		   }
+	   }
+	   
+	   public void muestraNoLeido() {
+		   while(porLeer()) {
+			   System.out.println(this.muestraPrimerNoLeido());
+		   }
+	   }
+	
+}

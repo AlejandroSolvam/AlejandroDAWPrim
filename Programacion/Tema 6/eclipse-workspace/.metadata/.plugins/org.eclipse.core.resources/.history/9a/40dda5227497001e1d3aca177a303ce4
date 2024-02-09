@@ -1,0 +1,19 @@
+package Ejercicio2;
+/* Exercici 2
+Crea la classe cotxe de la qual es vol saber: la matricula, la marca, el model i els Km. D'ella necessitarem un o més
+constructors, i els mètodes get i set de les seues propietats. El programa demanarà per teclat les dades dels cotxes i els
+guardarà a un ArrayList.
+S'introduiran tants cotxes com l'usuari del programa decidisca. Es mostrarà un menú per pantalla com el següent:
+• Afegir un cotxe.
+• Esborrar un cotxe.
+• Quants cotxes es tenen.
+• Veure tots els cotxes introduïts.
+• Tots els cotxes d'una marca determinada.  */
+public class Ejercicio {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

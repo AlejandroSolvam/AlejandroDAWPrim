@@ -1,0 +1,97 @@
+package Ejercicio1;
+/* Exercicis amb ArrayList
+Exercici 1
+Crea un programa per a gestionar un registre d'estudiants i les seues notes.
+Has d'implementar les següents classes:
+• Estudiant: Representa a un estudiant amb atributs com a nom, cognom i número d'estudiant.
+• RegistreEstudiants: Representa el registre que contindrà una col·lecció d'estudiants i les seues notes. Ha de
+tindre mètodes per a agregar un estudiant, ingressar notes per a un estudiant i calcular la mitjana de notes
+d'un estudiant.
+• Prova: Classe principal que conté el mètode main on es realitza la interacció amb l'usuari.
+Requisits:
+• Usa la classe ArrayList per a emmagatzemar la col·lecció d'estudiants en la classe RegistreEstudiants.
+class RegistreEstudiants {
+ ArrayList<Estudiant> estudiants = new ArrayList();
+ public void agregarEstudiant(Estudiant estudiant) {
+ }
+ public void ingresarNotas(Estudiant estudiant, double nota) {
+ }
+ public double calcularPromedioNotas() {
+ }
+ public void mostrarListaDeEstudiants() {
+ }
+}
+• Implementa un menú interactiu en el mètode main que permeta a l'usuari realitzar les següents accions:
+• Agregar un nou estudiant al registre.
+• Ingressar notes per a un estudiant.
+• Calcular la mitjana de notes.
+• Mostrar la llista completa d'estudiants i les seues notes.
+• Eixir del programa. */
+import java.util.Scanner;
+public class Ejercicio {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		boolean seguir=true;
+	while(seguir!=false) {	
+		
+		Scanner Introducir=new Scanner(System.in);
+		int opcion=0;
+		double nota=0;
+		
+		System.out.println("Bienvenido al menu de estudiante, escoge la opción que quieres realizar:");
+		System.out.println("1. Agregar un nou estudiant al registre.");
+		System.out.println("2. Ingressar notes per a un estudiant.");
+		System.out.println("3. Calcular la mitjana de notes.");
+		System.out.println("4. Mostrar la llista completa d'estudiants i les seues notes.");
+		System.out.println("5. Eixir del programa.");
+		opcion=Introducir.nextInt();
+		
+		switch(opcion) {
+		case 1:
+			String name="";
+			String apellido="";
+			int numExp=0;
+			
+			System.out.println("Introduce el nombre de estudiante:");
+			name=Introducir.nextLine();
+			System.out.println("Introduce el apellido del estudiante:");
+			apellido=Introducir.nextLine();
+			System.out.println("Introduce el numero de expendiente del estudiante:");
+			numExp=Introducir.nextInt();
+			
+			Estudiante nuevoEstudiante=new Estudiante(name,apellido,numExp);
+			RegistroDeEstudiantes regEst=new RegistroDeEstudiantes();
+			
+			regEst.agregarEstudiant(nuevoEstudiante);
+			break;
+		case 2:
+			System.out.println("Introduce la nota del estudiante:");
+			nota=Introducir.nextDouble();
+			
+			break;
+		case 3:
+			break;
+		case 4:
+			break;
+		case :
+			break;
+		}
+		
+		
+		
+		System.out.println("Introduce una de las siguientes opciones:");
+		
+		
+		
+		RegistroDeEstudiantes Estudiante1=new RegistroDeEstudiantes();
+		Estudiante1.agregarEstudiant(nuevoEstudiante);
+		Estudiante1.ingresarNotas(nuevoEstudiante,7.8);
+		Estudiante1.ingresarNotas(nuevoEstudiante,8.5);
+		Estudiante1.ingresarNotas(nuevoEstudiante,4.9);
+		System.out.println(Estudiante1.calcularPromedioNotas());
+		Estudiante1.mostrarListaDeEstudiants();
+		}
+	}
+
+}

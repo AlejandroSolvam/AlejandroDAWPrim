@@ -1,0 +1,44 @@
+package Ejercicio2;
+
+import java.util.Scanner;
+
+import Ejercicio1.RegistroDeEstudiantes;
+
+/* Exercici 2
+Crea la classe cotxe de la qual es vol saber: la matricula, la marca, el model i els Km. D'ella necessitarem un o més
+constructors, i els mètodes get i set de les seues propietats. El programa demanarà per teclat les dades dels cotxes i els
+guardarà a un ArrayList.
+S'introduiran tants cotxes com l'usuari del programa decidisca. Es mostrarà un menú per pantalla com el següent:
+• Afegir un cotxe.
+• Esborrar un cotxe.
+• Quants cotxes es tenen.
+• Veure tots els cotxes introduïts.
+• Tots els cotxes d'una marca determinada.  */
+import java.util.ArrayList;
+public class Ejercicio {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		boolean seguir=true;
+		Arraylist <Coche> cochesAlmacenados=new Arraylist<Coche>();
+	while(seguir!=false) {	
+		
+		Scanner Introducir=new Scanner(System.in);
+		int opcion=0;
+		double nota=0;
+		
+		System.out.println("Bienvenido al menu de estudiante, escoge la opción que quieres realizar:");
+		System.out.println("1. Agregar un nou estudiant al registre.");
+		System.out.println("2. Ingressar notes per a un estudiant.");
+		System.out.println("3. Calcular la mitjana de notes.");
+		System.out.println("4. Mostrar la llista completa d'estudiants i les seues notes.");
+		System.out.println("5. Eixir del programa.");
+		opcion=Introducir.nextInt();
+		
+		switch(opcion) {
+		case 1:
+	}
+		
+  }
+}

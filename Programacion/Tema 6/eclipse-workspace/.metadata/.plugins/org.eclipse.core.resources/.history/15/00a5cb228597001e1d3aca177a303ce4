@@ -1,0 +1,15 @@
+package Curso;
+
+import java.util.ArrayList;
+public class Alumno {
+	
+	private String nombre;
+	private int edad;
+	private ArrayList<Asignatura> asignaturas;
+	
+	Alumno(String nam, int ed) {
+        this.nombre = nam;
+        this.edad = ed;
+        this.asignaturas = new ArrayList<>();
+    }
+}

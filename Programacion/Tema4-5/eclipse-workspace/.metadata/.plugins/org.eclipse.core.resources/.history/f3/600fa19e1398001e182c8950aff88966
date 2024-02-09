@@ -1,0 +1,9 @@
+package circulo;
+
+public class Cilindro extends Circulo{
+	private double height;
+	
+	public Cilindro(){
+		this.height=1.0;
+	}
+}

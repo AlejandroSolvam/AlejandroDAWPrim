@@ -1,0 +1,31 @@
+package Ejercicio1;
+/* Crea una clase Certificado que sea subclase de Examen. Crea un método en la subclase Certificado llamado "Calificacion".
+
+Si el valor de la calificación es A se establecerá "Excelencia" en el certificado, B o C será "Logro", 
+en caso contrario "No se reconoce certificado".
+
+Finalmente deberá devolver el valor del certificado. */
+public class Certificado extends Examen {
+	
+	Certificado(String newNot) {
+		super(newNot);
+		// TODO Auto-generated constructor stub
+	}
+
+	private String nota;
+	
+	String Calificacion(){
+		if(nota=="A") {
+			nota="Excelente";
+			return nota;
+		}else {
+			if(nota=="B" || nota=="C") {
+				nota="Logro";
+				return nota;
+			}
+		}
+		nota="No se reconoce certificado";
+		return nota;
+	}
+
+}

@@ -1,0 +1,32 @@
+package proyectoHumano;
+
+public class Humano {
+	private String nombre;
+	
+	Humano(){
+		this.nombre="Nombre Predeterminado";
+	}
+	
+	Humano(String newN, int newE){
+		super(newE);
+		this.nombre=newN;
+	}
+	
+	String getNombre() {
+		return this.nombre;
+	}
+	
+	void setNombre(String newN) {
+		this.nombre=newN;
+	}
+	
+	public boolean equals(Humano otroHumano) {
+		if(this.getNombre().equals(otroHumano.getNombre())) {
+			System.out.println("Este humano es igual? ");
+			return true;
+		}else{
+			System.out.println("Este humano es igual? ");
+			return false;
+		}
+	}
+}

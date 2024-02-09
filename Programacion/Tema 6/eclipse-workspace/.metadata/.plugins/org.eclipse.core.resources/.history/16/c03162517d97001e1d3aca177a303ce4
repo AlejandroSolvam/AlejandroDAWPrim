@@ -1,0 +1,89 @@
+package Ejercicio2;
+
+import java.util.Scanner;
+
+import Ejercicio1.Estudiante;
+import Ejercicio1.RegistroDeEstudiantes;
+
+/* Exercici 2
+Crea la classe cotxe de la qual es vol saber: la matricula, la marca, el model i els Km. D'ella necessitarem un o més
+constructors, i els mètodes get i set de les seues propietats. El programa demanarà per teclat les dades dels cotxes i els
+guardarà a un ArrayList.
+S'introduiran tants cotxes com l'usuari del programa decidisca. Es mostrarà un menú per pantalla com el següent:
+• Afegir un cotxe.
+• Esborrar un cotxe.
+• Quants cotxes es tenen.
+• Veure tots els cotxes introduïts.
+• Tots els cotxes d'una marca determinada.  */
+import java.util.ArrayList;
+public class Ejercicio {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		boolean seguir=true;
+		ArrayList <Coche> cochesAlmacenados=new ArrayList();
+	while(seguir!=false) {	
+		
+		Scanner Introducir=new Scanner(System.in);
+		int opcion=0;
+		double nota=0;
+		
+		System.out.println("Bienvenido al menu de coches, escoge la opción que quieres realizar:");
+		System.out.println("1. Afegir un cotxe.");
+		System.out.println("2. Esborrar un cotxe.");
+		System.out.println("3. Quants cotxes es tenen.");
+		System.out.println("4. Veure tots els cotxes introduïts.");
+		System.out.println("5. Tots els cotxes d'una marca determinada.");
+		System.out.println("6. Eixir del programa.");
+		opcion=Introducir.nextInt();
+		
+		switch(opcion) {
+		case 1:
+			Introducir.nextLine();
+			System.out.println("Introduce la matricula del coche:");
+			String matricul=Introducir.nextLine();
+			System.out.println("Introduce la marca del coche:");
+			String marc=Introducir.nextLine();
+			System.out.println("Introduce el modelo del coche:");
+			String model=Introducir.nextLine();
+			System.out.println("Introduce los kilometros del coche:");
+			double kilom=Introducir.nextDouble();
+			
+			Coche nuevoCoche=new Coche(matricul,marc,model,kilom);
+			cochesAlmacenados.add(nuevoCoche);
+			break;
+		case 2:
+			if(cochesAlmacenados.isEmpty()) {
+				System.out.println("No has añadido aún ningún coche, por favor, añadelo.");
+				break;
+				}else{
+			Introducir.nextLine();
+			System.out.println("Introduce la matricula del coche que quieres eliminar:");
+			String matriculBorr=Introducir.nextLine();
+			
+			for(int i=0;i<cochesAlmacenados.size();i++) {
+				Coche cocheVariable=cochesAlmacenados.get(i);
+				if(cocheVariable.getMatricula().equals(matriculBorr)) {
+					cochesAlmacenados.remove(i); 
+				}
+			}
+			break;
+		}
+		case 3:
+			System.out.println(cochesAlmacenados.size());
+			break;
+		case 4:
+			for(int i=0;i<cochesAlmacenados.size();i++) {
+				Coche cocheVariable=cochesAlmacenados.get(i);
+				System.out.println("Matricula:"+cocheVariable.getMatricula()+" Marca:"+cocheVariable.getMarca()+" Modelo:"+cocheVariable.getModelo()+" Kilometros coche:"+cocheVariable.getKilometros());
+			}
+			break;
+		case 5:
+			break;
+		case 6:
+			break;
+	}
+		
+  }
+}

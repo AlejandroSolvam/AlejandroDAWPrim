@@ -1,0 +1,30 @@
+package proyectoSerVivo;
+
+public class SerVivo {
+	private byte edad;
+	
+	SerVivo(){
+		this.edad=0;
+	}
+	
+	SerVivo(byte newE){
+		this.edad=newE;
+	}
+	
+	byte getEdad() {
+		return this.edad;
+	}
+	
+	void setEdad(byte newE) {
+		this.edad=newE;
+	}
+	
+	public boolean equals(SerVivo otroSerVivo) {
+		if(this.edad==otroSerVivo.getEdad()) {
+			return true;
+		}else{
+			return false;
+		}
+	}	
+	
+}

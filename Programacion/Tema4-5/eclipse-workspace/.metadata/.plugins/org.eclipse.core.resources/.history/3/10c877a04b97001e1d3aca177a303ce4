@@ -1,0 +1,28 @@
+package Ejercicio2;
+
+import java.util.Scanner;
+public class Ejercicio {
+	public static void main(String []args) {
+		
+		Scanner Introducir = new Scanner(System.in);
+		
+		System.out.println("¿Cuantos virus quieres?");
+		
+		int numViruses = Introducir.nextInt();
+		
+		if (numViruses > 0) {
+		Virus[] virii = new Virus[numViruses];
+		
+		for (int i = 0; i < numViruses; i++) {
+		virii[i] = new Virus(i);
+		}
+		for(int i = 0; i < numViruses; i++) {
+		 System.out.println("Virus num: " + virii[i].getNumeroVirus();
+		}
+		System.out.println("Hay" + Virus.getVirusCount() + "viruses.");
+		
+		}
+	}
+
+
+	

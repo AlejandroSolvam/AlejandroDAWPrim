@@ -1,0 +1,16 @@
+package circulo;
+
+public class Circulo {
+	private double radius;
+	private String color;
+	
+	public Circulo() {
+		this.radius=1.0;
+		this.color="red";
+	}
+	
+	public Circulo(double rad) {
+		this.radius=rad;
+		this.color="red";
+	}
+}
