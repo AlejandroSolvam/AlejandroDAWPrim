@@ -2,62 +2,60 @@ ul{
     list-style-type: none;
 }
 
-nav{
+
+nav > ul > li > a{
+    display: block;
+    padding: 16px 21.2px;
+    background-color: red;
+}
+
+nav > ul > li > a:hover{
+    background-color: forestgreen;
+    color: white;
+}
+
+nav > ul > li{
     position: relative;
-}
-
-ul#menuUlPrincipal{
-    height: 85px;
-}
-
-ul#menuUlPrincipal > li{
     float: left;
+}
+
+nav ul li:hover ul{
     display: block;
 }
 
-ul#menuUlPrincipal > li > a{
-    display: block;  
-    background-color: rgb(219, 217, 214);
-    padding: 32px 25.8px;
-}
-
-ul#menuUlPrincipal > li:hover > a{
-    background-color: sandybrown;
-}
-
-li#hostingLi > ul{
+nav ul li ul{
     display: none;
+}
+
+nav > ul > li > ul{
     position: absolute;
-    width: 200px;
-    height: 202px;
+    width: 350px;
+    height: 200px;
+    top: 50px;
+    left: -130px;
     background-color: white;
-    top: 89px;
-    left: 280px;
-    border: 1px solid red;
 }
 
-li#hostingLi:hover > ul{
-    display: block;
+ul#submenu > li:hover > a{
+    color: blue;
 }
 
-li#hostingLi > ul > li{
+nav ul li ul li a span{
+    width: 50px;
+    height: 50px;
     float: left;
-    width: 100%;
-    display: block;
 }
 
-li#hostingLi > ul > li > a{
-    display: block;
-    padding: 15px;
-    border: 1px solid green;
+nav ul li ul li a h2{
+    width: 300px;
+    height: 25px;
+    float: right;
 }
 
-li#hostingLi > ul > li > a:hover{
-    background-color: red;
-}
-
-li#hostingLi > ul > li > a:hover{
-    background-color: red;
+nav ul li ul li a p{
+    width: 300px;
+    height: 25px;
+    float: right;
 }
 
 .boton{
