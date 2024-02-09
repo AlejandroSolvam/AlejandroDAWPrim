@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UNO</title>
+
+    <style>
+        .caja{
+            border: 10px solid blue;
+            width: 400px; height: 400px;
+            margin: 0px auto;
+        }
+
+        .uno{
+            background-color: brown;
+            width: 50px; height: 50px;
+            position: relative;
+            top: 350px; left: 350px;
+        }
+
+        .dos{
+            background-color: green;
+            width: 50px; height: 50px;
+            position: relative;
+            top: -50px; left: 350px;
+        }
+
+        .tres{
+            background-color: pink;
+            width: 50px; height: 50px;
+            position: relative;
+            top: 250px;
+            
+        }
+
+        .cuatro{
+            background-color: orange;
+            width: 50px; height: 50px;
+            position:relative;
+            top:-150px;
+        }
+
+        .cajaabs{
+            border: 10px solid blue;
+            width: 300px; height: 300px;
+            margin: 0px auto;
+            position: relative;
+        }
+
+        .unoabs{
+            background-color: brown;
+            width: 100px; height: 100px;
+            position: absolute;
+            right: 0px; bottom: 0px;
+            
+        }
+
+        .dosabs{
+            background-color: green;
+            width: 100px; height: 100px;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+
+        .tresabs{
+            background-color: pink;
+            width: 100px; height: 100px;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+        }
+
+        .cuatroabs{
+            background-color: orange;
+            width: 100px; height: 100px;
+            top: 0px;
+            left: 0px;
+        }
+
+        *{
+            margin: 0px; padding: 0px;
+        }
+
+        div#menu{
+            width: 800px;
+            margin: 0px auto;
+        }
+       
+
+        div#menu ul{
+            position: relative;
+            list-style-type: none;
+            position: relative;
+        }
+
+        div#menu ul li{
+            background-color: aliceblue;
+            width: 100px;
+            float: left;
+        }
+
+        div#menu ul li:hover{
+            background-color: rgb(102, 136, 125);
+            border: 3px solid rgb(49, 51, 45);
+            width: 100px;
+            float: left;
+        }
+
+        div#menu ul li a{
+            display: block;
+            height: 36px;
+            text-align: center;
+            padding-top: 17px;
+        }
+
+        p.limpiar{
+          clear: both;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="menu">
+        <ul>
+            <li>
+                <a href="#">Menu 1</a>
+            </li>
+            <li>
+                <a href="#">Menu 2</a>
+            </li>
+            <li>
+                <a href="#">Menu 3</a>
+            </li>
+            <li class="menu4">
+                <a href="#">Menu 4</a>
+            </li>
+            <li>
+                <a href="#">Menu 5</a>
+            </li>
+            <li>
+                <a href="#">Menu 6 </a>
+            </li>
+            <p class="limpiar"></p>
+        </ul>
+    </div>
+
+<br/><br/><br/>
+
+   <div class="caja">
+    <div class="uno">1</div>
+    <div class="dos">2</div>
+    <div class="tres">3</div>
+    <div class="cuatro">4</div>
+   </div>
+<br>
+   <div class="cajaabs">
+    <div class="unoabs">1</div>
+    <div class="dosabs">2</div>
+    <div class="tresabs">3</div>
+    <div class="cuatroabs">4</div>
+   </div>
+
+   
+   <a href="../elegirEjercicio.html">Volver a escoger posicionamiento/menu</a>
+</body>
+</html>

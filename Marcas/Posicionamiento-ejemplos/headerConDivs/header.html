@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+header{
+    border: 1px solid black;
+    width: 500px; height: 250px;
+    margin: 0px auto;
+}
+
+header div{
+    border: 1px solid red;
+    width: 100px; height: 50px;
+    margin: 0px auto;
+}
+
+header *{
+    border: 1px solid red;
+    width: 100px; height: 50px;
+}
+
+header div, header a{
+  display: block;
+}
+
+header div.especial{
+    display:none;
+    position: absolute;
+    background-color: aqua;
+}
+
+header div.especial2{
+    visibility: hidden;
+}
+
+header:hover div.especial2{
+    visibility: visible;
+}
+
+header:hover div.especial{
+    display:block;
+}
+
+</style>
+</head>
+
+
+
+<body>
+
+    <header>
+        <div>1</div>
+        <div class="especial">2</div>
+        <div class="especial2">3</div>
+        <div>4</div>
+    </header>
+    
+
+    <a href="../elegirEjercicio.html">Volver a escoger posicionamiento/menu</a>
+</body>
+</html>

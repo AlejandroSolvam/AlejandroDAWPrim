@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+    *{
+        padding:0px;
+        margin: 0px;
+    }
+
+    div.contenedor{
+        border: solid 1px black;
+        position: relative;
+        width: 400px;
+        height: 200px;
+        margin: 0px auto;
+    }
+
+    div div{
+        position: absolute;
+        border: 1px solid red;
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+    }
+
+    div.uno{
+        position: absolute;
+        top: 0px;   
+        left: 0px;
+        background-color: blue;
+        z-index: 20;         
+    }
+
+    div.dos{
+        position: absolute;
+        top: 20px;
+        left: 20px;    
+        background-color: brown;
+        z-index: 10;
+    }
+
+    div.tres{
+        position: absolute;
+        top: 40px;
+        left: 40px;    
+        background-color: violet;
+        z-index: 11;
+    }
+
+    p a:hover{
+        font-size: 20px;
+    }
+
+    p a:link{
+        color: aqua;
+    }
+
+    p a:visited{
+        color: red;
+    }
+
+    p a:active{
+        background-color: black;
+        color: white;
+    }
+
+    ul{
+        border: 2px solid red;
+        list-style-position: inside;
+        list-style-type: none;
+    }
+
+
+    ul li{
+        border: 2px solid green;
+        background-image: url();
+        background-repeat: no-repeat;
+        background-position: left center;
+        height: 30px;
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+
+    ul li:hover{
+        background-image: url();
+        background-position: 100px center;
+    }
+</style>
+<body>
+
+    <div class="contenedor">
+    <ul>
+        <li>Elemento</li>
+        <li>Elemento</li>
+        <li>Elemento</li>
+        <li>Elemento</li>
+        <li>Elemento</li>
+    </ul>
+</div>
+
+
+    <div>
+        <p>
+            <a href="zindex.html">Inicio</a> | <a href="https://www.google.es">Google</a>
+        </p>
+    </div>
+    <div class="contenedor">
+        <div class="uno"></div>
+        <div class="dos"></div>
+        <div class="tres"></div>
+    </div>
+</body>
+</html>

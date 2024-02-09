@@ -1,0 +1,15 @@
+    Compañia seguros
+    
+    1 Muestra los empleados que cobren más de 950 euros:
+
+    2 Muestra los seguros que haya adquirido el beneficiario “77777777B”:
+
+    3 Muestra los seguros vendidos por el empleado “44444444E” cuyo importe sea inferior a 300€:
+
+    4 Muestra los vendedores cuyo porcentaje sea mayor o igual a 10:
+
+    5 Inventa un enuncidado para solucionar con LIKE
+
+    6 Inventa un enuncidado para solucionar con BETWEEN
+
+    7 Inventa un enuncidado para solucionar con IN

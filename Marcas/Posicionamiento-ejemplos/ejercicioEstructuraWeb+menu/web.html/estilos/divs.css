@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+div#divPrincipal{
+    border: 1px solid red;
+    width: 1024px;
+    margin: 0px auto;
+}
+
+div#divIzquierdo{
+    float: left;
+    width: 30%;
+    height: 500px;
+}
+
+div#logo{
+    border: 1px solid blue;
+    width: 200px;
+    height: 70px;
+    margin: 10px auto;
+}
+
+div#redes_sociales{
+    border: 1px solid green;
+    width: 150px;
+    height: 60px;
+    margin: 10px auto;
+}
+
+div#buscador{
+    border: 1px solid firebrick;
+    width: 200px;
+    height: 40px;
+    margin: 10px auto;
+}
+
+div#product{
+    border: 1px solid rgb(21, 174, 19);
+    width: 150px;
+    height: 220px;
+    margin: 10px auto;
+}
+
+div#divDerecho{
+    float: right;
+    width: 70%;
+    height: 500px;
+}
+
+nav{
+    border: 1px solid violet;
+    width: 100%;
+    height: 100px;
+    margin: 10px auto;
+}
+
+div#menu{
+    float: left;
+    border: 1px solid blue;
+    width: 620px;
+    height: 85px;
+    margin-top: 5px;
+}
+
+div#carrito{
+    width: 85px;
+    height: 85px;
+    float: right;
+    margin-top: 5px;
+}
+
+div#contenedor{
+    border: 1px solid black;
+    width: 700px;
+    height: 370px;
+    margin-left: 8px;
+}
+
+div#contenedor article{
+    float: left;
+    margin-left: 24px;
+    margin-top: 20px;
+    border: 1px solid blue;
+    width: 200px;
+    height: 150px;
+}
+
+p.limpiar{
+    clear: both;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}

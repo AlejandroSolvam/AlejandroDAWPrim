@@ -1,0 +1,41 @@
+CONSULTAS BASE DE DATOS GALERÍA DE PINTURA
+
+    1. Muestra todos los artistas:
+    
+    select * from artistas;
+
+    2. Muestra el nombre, dirección y teléfono de todos los clientes:
+    
+    select nombre, direccion, telefono from cliente;
+
+    3. Muestra el dni y nombre del artista “44444444D”:
+    
+    select dni,nombre from artista where dni="44444444D";
+
+    4. Muestra  las pinturas que cuesten más de 100 euros (campo precio):
+    
+    select * from pintura where precio>100;
+
+    5. Muestra el título, código del cliente y precio final de las pinturas que haya comprado el cliente “12345678Q“:
+    
+    select titulo,dni_cliente,preciofinal from pintura where dni_cliente="12345678Q";
+
+    6. Inventa un enuncidado para solucionar con LIKE
+    
+    Selecciona los nombres y direccion de los artistas que comiencen con la
+    letra J.
+    
+    select nombre, direccion from artista where nombre like"J%";
+
+    7. Inventa un enuncidado para solucionar con BETWEEN
+    
+    Selecciona el titulo y el precio de las pinturas que tengan un
+    precio entre 100 y 250
+    
+    select titulo,precio from pintura where precio between 50 and 250;
+
+    8. Inventa un enuncidado para solucionar con IN
+    
+    Selecciona el nombre, direccion y telefono de la tabla cliente, de los nombres de la tabla que sean Maite y Marta.
+    
+    select nombre,direccion,telefono from cliente where nombre in ("Maite","Marta");
