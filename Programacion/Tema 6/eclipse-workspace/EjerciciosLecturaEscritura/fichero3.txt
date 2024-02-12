@@ -1,0 +1,3 @@
+Nombre persona:Miguel Edad Persona:18
+Nombre persona:Alejandro Edad Persona:21
+Nombre persona:Jorge Edad Persona:30

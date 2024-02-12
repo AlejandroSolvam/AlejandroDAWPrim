@@ -1,0 +1,2 @@
+Nombre persona:alejandro Edad Persona:20
+Nombre persona:isabel Edad Persona:30
