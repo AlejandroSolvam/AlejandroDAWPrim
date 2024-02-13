@@ -12,21 +12,19 @@ public class Ejercicio3 {
 			int contador=0;
 			int palabras=0;
 			int lineas=0;
-			String linea;
 			
 	try {
 		FileReader input = new FileReader(FILE_NAME);
-		BufferedReader datos = new BufferedReader(input);
 		int c= input.read();
 		while(c!=-1) {
 			contador=contador+1;
 			c=input.read();
 			if(c==' ') {
 				palabras++;
+			}else if(c=='\n') {
+				palabras++;
+				lineas++;
 			}
-			while((linea=datos.readLine())!=null) {
-				 lineas++;
-			 }
 		}
 		 
 		input.close();
