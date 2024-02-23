@@ -47,16 +47,14 @@ div#divDerecho{
 }
 
 div#menu{
-    border: 1px solid blueviolet;
     width: 700px;
     height: 70px;
 }
 
 nav {
-    width:572px;
+    width:573px;
     height:50px;
     margin: 10px;
-    border: 1px solid red;
     float: left;
     margin-left: 15px;
 }
@@ -64,21 +62,19 @@ nav {
 div#carrito{
     margin: 7px;
     float: right;
-
 }
 
 div#contenedor{
-    border: 1px solid blueviolet;
     width: 700px;
     height: 460px;
 }
 
 article{
-    border: 1px solid blue;
+    border: 0.1px solid black;
     width: 200px;
     height: 200px;
     float: left;
-    margin: 15px;
+    margin: 15px 12.6px;
     text-align: center;
 }
 
