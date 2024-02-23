@@ -1,0 +1,87 @@
+* {
+	margin: 0px; padding: 0px;
+	color: white;
+	text-decoration: none;
+}
+
+div#contenedor{
+	width: 1024px;
+	margin: 0px auto;
+	border: 1px solid black;
+}
+
+ul#menup li div{
+	display: none;
+}
+
+div#menu{
+	width: 1024px;
+	height: 80px;
+	background-color: black;
+}
+
+li{
+	list-style-type: none;
+}
+
+div#menu{
+	border: 1px solid green;
+}
+
+ul#menup{
+	border: 1px solid green;
+}
+
+div#menu ul#menup li.logo{
+	width: 210px;
+	height: 55px;
+	padding-top: 25px;
+	background-color: orange;
+	float: left;
+}
+
+div#menu ul#menup li.lista{
+	width: 187.2px;
+	height: 50px;
+	padding-top: 30px;
+	background-color: aqua;
+	float: left;
+	text-align: center;
+	background-image: url(../img/flecha-abajo.PNG);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+div#menu ul#menup li.lista:hover{
+	background-image: url(../img/flecha-arriba.PNG);
+}
+
+div#menu ul#menup li.login{
+	width: 250px;
+	height: 80px;
+	background-color: green;
+	float: right;
+	text-align: center;
+}
+
+li.login p{
+	padding-top: 20px;
+	width: 120px;
+	height: 55px;
+	float: left;
+	background-color: red;
+	margin: 2px;
+}
+
+ul#menup li:hover div{
+	display: block;
+	width: 1024px;
+	height: 1000px;
+	background-color: brown;
+}
+
+p.limpiar{
+	clear: both;
+}
+
+
