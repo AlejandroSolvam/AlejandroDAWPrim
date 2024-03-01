@@ -1,0 +1,159 @@
+*{
+margin: 0px;
+padding: 0px;
+list-style-type:none;
+}
+
+body{
+    background-color: black;
+    background-image: url(../imagenes/TVC-background.png);
+    background-repeat: no-repeat;
+    background-position: center 50px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+div#hdp-wrapper{
+    margin: 0px auto;
+    width: 1024px;
+    border: 1px solid aqua;
+  
+}
+
+div#hdp-header{
+    width: 1024px;
+    height: 70px;
+    background-color: gray;
+}
+
+ul#menu_principal{
+
+}
+
+ul#menu_principal li{
+    border: 1px solid green;
+    width: 100px;
+    height: 70px;
+    display: block;
+    float: left;
+}
+
+ul#menu_principal li a span{
+    display: block;
+    padding-top: 7px;
+    padding-left: 7px;
+    width: 90px;
+    height: 58px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid red;
+ 
+}
+
+a#imagHein{
+    display: block;
+    width: 150px;
+    height: 68px;
+    background-image: url(../imagenes/heineken-logo.png);
+    background-size: 150px 135px;
+    background-repeat: no-repeat;
+}
+
+a#imagHein:hover{
+    background-position: 0px -67px;
+}
+
+ul#menu_principal li#principio{
+    border: 1px solid green;
+    width: 150px;
+    height: 70px;
+    display: block;
+    float: left;
+}
+
+ul#menu_principal li div{
+    display: none;
+}
+
+div#hdp-content{
+    border: 1px solid saddlebrown;
+    width: 1024px;
+}
+
+div.homepage{
+    border: 1px solid gold;
+    width: 1024px;
+}
+
+ul li.primary{
+    border: 1px solid rebeccapurple;
+    width: 1024px;
+    height: 455px;
+    color: white;
+}
+
+ul li.primary h1 span.first-line{
+    margin-top: 70px;
+    margin-left:50px;
+    border: 1px solid hotpink;
+    display: block;
+    width: 270px;
+    height: 382px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+ul li#spot{
+    float: left;
+    border: 1px solid firebrick;
+    display: block;
+    width: 445px;
+    height: 190px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+ul li#spot a img{
+    float: left;
+    width:200px;
+    height: 188px;
+    border: 1px solid red;
+    border: 1px solid mediumblue;
+}
+ul li#spot h2 {
+    width: 240px;
+    height: 188px;
+    float: right;
+    border: 1px solid darkblue;
+}
+
+ul li#spot h2 span.blanco{
+    display: block; 
+    color: white;
+    font-size: 50px;
+    
+}
+
+ul li#spot h2 span.verde{
+    margin-top: 15px;
+    display: block;
+    color: green;
+}
+
+ul li#club{
+    float: left;
+    border: 1px solid firebrick;
+    display: block;
+    width: 500px;
+    height: 190px;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: red;
+}
+
+p.limpiar{
+    clear: both;
+}
