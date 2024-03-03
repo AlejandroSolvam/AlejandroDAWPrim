@@ -26,14 +26,14 @@ div#hdp-wrapper{
 div#hdp-header{
     width: 1024px;
     height: 70px;
-    background-color: gray;
+    background-color: rgb(53, 49, 49);
 }
 
 ul#menu_principal{
-
+    position: relative;
 }
 
-ul#menu_principal li{
+ul#menu_principal > li{
     border: 1px solid green;
     width: 100px;
     height: 70px;
@@ -41,7 +41,7 @@ ul#menu_principal li{
     float: left;
 }
 
-ul#menu_principal li a span{
+ul#menu_principal > li > a > span{
     display: block;
     padding-top: 7px;
     padding-left: 7px;
@@ -50,15 +50,15 @@ ul#menu_principal li a span{
     font-size: 14px;
     font-weight: bold;
     border: 1px solid red;
- 
 }
 
 a#imagHein{
     display: block;
-    width: 150px;
+    width: 110px;
+    border: 1px solid red;
     height: 68px;
     background-image: url(../imagenes/heineken-logo.png);
-    background-size: 150px 135px;
+    background-size: 110px 135px;
     background-repeat: no-repeat;
 }
 
@@ -67,15 +67,64 @@ a#imagHein:hover{
 }
 
 ul#menu_principal li#principio{
-    border: 1px solid green;
-    width: 150px;
+    width: 110px;
     height: 70px;
     display: block;
     float: left;
 }
 
-ul#menu_principal li div{
+ul#menu_principal li div.panel{
+    position: absolute;
     display: none;
+    left: 0px;
+    width: 1024px;
+    height: 175px;
+    background-color: blueviolet;
+}
+
+ul#menu_principal li:hover div.panel{
+    display: block;
+}
+
+span.section{
+    float: left;
+    padding-top: 15px;
+    padding-left: 25px;
+    display: block;
+    width: 240px;
+    height: 160px;
+    background-color: blue;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 37px;
+}
+
+div.panel ul li a{
+    display: block;
+    border: 1px solid darkblue;
+    float: left;
+    width: 150px;
+    height: 174px;
+    background-color: aqua;
+}
+
+div.panel ul li a img{
+    padding-left: 38px;
+    padding-top:20px;
+    display: block;
+    border: 1px solid red;
+    width: 70px;
+    height: 70px;
+}
+
+div.panel ul li a span{
+    display: block;
+    border: 1px solid red;
+    width: 149px;
+    height: 80px;
+    padding-left:25px;
+    font-size: 13px;
 }
 
 div#hdp-content{
@@ -84,74 +133,109 @@ div#hdp-content{
 }
 
 div.homepage{
-    border: 1px solid gold;
     width: 1024px;
 }
 
 ul li.primary{
-    border: 1px solid rebeccapurple;
     width: 1024px;
-    height: 455px;
     color: white;
 }
 
 ul li.primary h1 span.first-line{
-    margin-top: 70px;
+    margin-top: 80px;
     margin-left:50px;
-    border: 1px solid hotpink;
     display: block;
     width: 270px;
-    height: 382px;
+    height: 280px;
     font-size: 40px;
     font-weight: bold;
+    letter-spacing: 0.1px;
+    line-height: 35px;
 }
 
 ul li#spot{
     float: left;
-    border: 1px solid firebrick;
     display: block;
-    width: 445px;
+    width: 460px;
     height: 190px;
     font-size: 40px;
     font-weight: bold;
 }
 
 ul li#spot a img{
+    padding-top: 35px;
+    padding-left: 40px;
     float: left;
-    width:200px;
-    height: 188px;
-    border: 1px solid red;
-    border: 1px solid mediumblue;
+    width:160px;
+    height: 153px;
 }
 ul li#spot h2 {
-    width: 240px;
-    height: 188px;
+    padding-top: 75px;
+    margin-right: 15px;
+    width: 235px;
+    height: 112px;
     float: right;
-    border: 1px solid darkblue;
+    font-size: 40px;
+    line-height: 40px;
+    padding-right: 5px;
+    letter-spacing: 0.1px;
 }
 
 ul li#spot h2 span.blanco{
     display: block; 
     color: white;
-    font-size: 50px;
-    
 }
 
-ul li#spot h2 span.verde{
-    margin-top: 15px;
+ul li#spot h2 span.verde{    
     display: block;
     color: green;
 }
 
 ul li#club{
     float: left;
-    border: 1px solid firebrick;
     display: block;
-    width: 500px;
+    width: 560px;
     height: 190px;
     font-size: 40px;
     font-weight: bold;
-    background-color: red;
+}
+
+ul li#club a{
+    float: left;
+    display: block;
+    padding-top: 40px;
+    padding-left: 70px;
+    width: 184px;
+    height: 150px;
+}
+
+ul li#club h2{
+    padding-top: 80px;
+    margin-right: 52px;
+    float: right;
+    display: block;
+    width: 250px;
+    height: 110px;
+    font-size: 40px;
+    line-height: 35px;
+    color: rgb(102, 204, 102);
+}
+
+div#hdp-footer{
+    width: 1024px;
+    height: 50px;
+    background-color: rgb(54, 52, 52);
+}
+
+div#hdp-footer ul li{
+    border: 1px solid green;
+    padding: 15px;
+    display: block;
+    float: left;
+}
+
+span.blanco{
+    color: white;
 }
 
 p.limpiar{
